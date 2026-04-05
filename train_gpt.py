@@ -690,7 +690,7 @@ class GPT(nn.Module):
 
         logits = self.logit_softcap * torch.tanh(
             logits_proj / self.logit_softcap)
-        return F.cross_entropy(logits.float(), targets, reduction="mean")
+        return F.cross_entropy(logits.float(), targets.long(), reduction="mean")
 
     def get_layer_selections(self) -> dict:
         return {
