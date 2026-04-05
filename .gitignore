@@ -1,0 +1,11 @@
+out/
+data/*.bin
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+*.egg-info/
+dist/
+build/
+.env
+*.pkl.zlib
